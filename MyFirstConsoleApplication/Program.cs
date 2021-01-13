@@ -13,7 +13,7 @@ namespace MyFirstConsoleApplication
             char firstLetter = 'C';
             string name = "Chris";
 
-            // let myInterpolatedString = `this stuff ${firstLetter}`
+            // let myInterpolatedString = `this stuff ${firstLetter}` is the JS way
             var myInterpolatedString = $"My name is {name} and the " +
                                        $"first letter is {firstLetter}";
             var stringLiteral = @"This is a paragraph.
@@ -28,6 +28,17 @@ namespace MyFirstConsoleApplication
             Console.WriteLine(bigNumber);
             Console.WriteLine(littleNumber);
 
+
+            //decimals can be represented by [f]loat(32bit) [d]ouble(64bit) or deci[m]al(128bit)
+            var adding = 1 + 1.1m;
+            double doubleNum = 2.2;
+            var division = 3 / 2d;
+
+
+
+
+
+
             var implicitStringThing = "this is an implicitly typed variable.";
 
             DateTime today = DateTime.Today;
@@ -38,7 +49,7 @@ namespace MyFirstConsoleApplication
 
             object person = new { Name = "Chris" };
 
-            //anonymous typpe, new object
+            //anonymous type, new object
             var newPerson = new { 
                 Name = "Chris",
                 LastName = "LoJacono"
@@ -50,6 +61,13 @@ namespace MyFirstConsoleApplication
             weirdStuff = "More Craziness.";
 
             Console.WriteLine(weirdStuff);
+
+            // ARRAYS
+            var names = new string[5];
+
+            var secondName = names[1];
+            names[1] = "Jimmy";
+
 
 
         }
