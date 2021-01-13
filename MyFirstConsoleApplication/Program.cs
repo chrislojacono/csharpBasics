@@ -6,9 +6,20 @@ namespace MyFirstConsoleApplication
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("What is your favorite color?");
+            var input = Console.ReadLine();
+
+            // String things
             char firstLetter = 'C';
             string name = "Chris";
 
+            // let myInterpolatedString = `this stuff ${firstLetter}`
+            var myInterpolatedString = $"My name is {name} and the " +
+                                       $"first letter is {firstLetter}";
+            var stringLiteral = @"This is a paragraph.
+                                  It is across multiple lines!!";
+
+            Console.WriteLine(stringLiteral);
             //Number Types
             int number = Int32.MaxValue;
             long bigNumber = Int64.MaxValue;
