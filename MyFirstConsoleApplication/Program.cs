@@ -68,6 +68,57 @@ namespace MyFirstConsoleApplication
             var secondName = names[1];
             names[1] = "Jimmy";
 
+            var colors = new string[] { "white", "blue", "yellow", "purple", "orange", "teal" };
+
+
+            // CONTROL FLOW
+            if (input == "Chris")
+            {
+                Console.WriteLine("Duhhh");
+            }
+            else if (input == "Bobby")
+            {
+                Console.WriteLine(input);
+            }
+            else
+            {
+                Console.WriteLine("Not Chris!!");
+            }
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"currently for looping on number {i}");
+            }
+            for (int i = 0; i < colors.Length; i++)
+            {
+                Console.WriteLine($"currently for looping on color {colors[i]}");
+            }
+
+
+            var counter = 1;
+            while (true)
+            {
+                
+                Console.WriteLine($"While loop iteration {counter}.");
+
+                if (counter <= 5)
+                {
+                    counter++;
+                    continue;
+                }
+                    
+
+                break;
+            }
+
+
+            //These are more preferred in C#
+
+            foreach (var color in colors)
+            {
+                Console.WriteLine($"ForEach looping on color {color}");
+            }
 
 
         }
