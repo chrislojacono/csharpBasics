@@ -35,10 +35,6 @@ namespace MyFirstConsoleApplication
             var division = 3 / 2d;
 
 
-
-
-
-
             var implicitStringThing = "this is an implicitly typed variable.";
 
             DateTime today = DateTime.Today;
@@ -120,6 +116,58 @@ namespace MyFirstConsoleApplication
                 Console.WriteLine($"ForEach looping on color {color}");
             }
 
+
+            var counter = 1;
+            while (true)
+            {
+                
+                Console.WriteLine($"While loop iteration {counter}.");
+
+                if (counter <= 5)
+                {
+                    counter++;
+                    continue;
+                }
+                    
+
+                break;
+            }
+
+
+            //These are more preferred in C#
+
+            foreach (var color in colors)
+            {
+                Console.WriteLine($"ForEach looping on color {color}");
+            }
+
+
+
+
+
+            //DEFAULT VALUES
+
+            //value of 0
+            int myNumber;
+
+            //value of false
+            bool myBool;
+
+            //default value is null
+            string myName;
+
+
+            // null conditional access operator
+            nyName?.ToString();
+
+            // null coalescing operator
+            myName = name ?? "Nathan";
+
+            //marking value types as nullable
+            bool? nullBool;
+
+            //.NET way
+            Nullable<bool> nullyBool;
 
         }
     }
